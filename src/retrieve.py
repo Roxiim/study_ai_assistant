@@ -5,7 +5,6 @@ def retrieve(collection, question: str, k: int = 4) -> list[dict]:
     result = collection.query(query_embeddings=embed_texts([question]), n_results=k)
     hits = []
     
-    # Check if results exist to avoid index errors
     if not result or not result.get("documents") or not result["documents"][0]:
         return hits
         
