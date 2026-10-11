@@ -2,8 +2,6 @@
 
 A Retrieval-Augmented Generation (RAG) study assistant built entirely from scratch in Python. This tool allows users to upload university PDF notes and ask questions, receiving strictly cited answers. 
 
-Designed as a portfolio project, this implementation avoids heavy frameworks like LangChain to demonstrate a deep understanding of vector databases, semantic search, prompt engineering, and RAG evaluation pipelines.
-
 ## ✨ Features
 
 * **From-Scratch RAG Pipeline:** Custom implementation of document ingestion, chunking, embedding, retrieval, and generation.
