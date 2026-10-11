@@ -15,10 +15,7 @@ def evaluate_chunk_size(chunk_size: int, overlap: int) -> float:
     print(f"Evaluating Chunk Size: {chunk_size} characters")
     print(f"{'='*40}")
     
-    # 1. Initialize isolated collection for this specific chunk size
     collection = get_collection(name="eval_notes", persist_dir=eval_db_path)
-    
-    # Check if we already populated it (simple check: count > 0)
     if collection.count() == 0:
         print(f"Creating database for size {chunk_size}...")
         # Assuming Lab9_EN.pdf is your test document in data/
@@ -30,8 +27,7 @@ def evaluate_chunk_size(chunk_size: int, overlap: int) -> float:
             print(f"Warning: {pdf_path} not found. Please ensure it is in the data folder.")
     else:
         print(f"Database for size {chunk_size} already exists.")
-        
-    # 2. Load the evaluation questions
+
     try:
         with open(os.path.join("eval", "questions.json"), "r", encoding="utf-8") as f:
             questions = json.load(f)
@@ -43,17 +39,14 @@ def evaluate_chunk_size(chunk_size: int, overlap: int) -> float:
     total = len(questions)
     
     print("\nRunning test questions...")
-    # 3. Evaluate Top-4 Hit Rate
+
     for q in questions:
         query = q["question"]
         expected_source = q["expected_source"]
         expected_page = q["expected_page"]
-        
-        # Retrieve the top 4 contexts for the current question
-        # answer() returns (generated_text, retrieved_passages)
+
         _, retrieved_passages = answer(collection, query, k=4)
-        
-        # Check if the expected document and page are in our top 4 results
+
         match_found = any(
             res["source"] == expected_source and res["page"] == expected_page
             for res in retrieved_passages
