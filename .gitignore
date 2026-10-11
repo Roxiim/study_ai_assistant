@@ -1,0 +1,7 @@
+venv/
+.env
+.env.*
+!.env.example
+chroma_db/
+eval_db_*/
+__pycache__/

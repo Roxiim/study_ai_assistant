@@ -1,0 +1,17 @@
+[
+  {
+    "question": "What is a projection transformation?",
+    "expected_source": "Lab9_EN.pdf",
+    "expected_page": 4
+  },
+  {
+    "question": "How do we compute the normal vector of a triangle?",
+    "expected_source": "Lab9_EN.pdf",
+    "expected_page": 5
+  },
+  {
+    "question": "What is the purpose of the viewport transformation?",
+    "expected_source": "Lab9_EN.pdf",
+    "expected_page": 2
+  }
+]
