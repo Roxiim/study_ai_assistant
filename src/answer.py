@@ -4,14 +4,12 @@ import google.generativeai as genai
 from dotenv import load_dotenv
 from src.retrieve import retrieve
 
-# Initialize Gemini globally
 load_dotenv()
 api_key = os.getenv("GEMINI_API_KEY")
 if not api_key:
     raise ValueError("GEMINI_API_KEY not found. Please check your .env file.")
 
 genai.configure(api_key=api_key)
-# Using 3.8-flash as it is the stable model on your free tier
 _llm_model = genai.GenerativeModel('gemini-3.8-flash')
 
 PROMPT_TEMPLATE = """You are a study assistant. Answer the question using ONLY the \
@@ -52,7 +50,6 @@ def answer(collection, question: str, k: int = 4) -> tuple[str, list[dict]]:
 if __name__ == "__main__":
     from src.embed import get_collection
     
-    # Simple test block
     print("Testing the pipeline...")
     col = get_collection()
     test_question = "What is a projection transformation?"
