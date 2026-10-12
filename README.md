@@ -32,7 +32,8 @@ To ensure the highest retrieval accuracy, the pipeline was evaluated on a ground
 * **Package Management:** `uv`
 
 
-##🚀 Installation & Setup
+
+## Installation & Setup
 
 1. Clone the repository
 Bash
@@ -40,7 +41,6 @@ git clone [https://github.com/your-username/rag-study-assistant.git](https://git
 cd rag-study-assistant
 2. Create and activate a virtual environment
 Using uv (Recommended):
-
 Bash
 uv venv
 # Windows:
