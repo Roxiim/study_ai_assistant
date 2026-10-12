@@ -31,4 +31,5 @@ To ensure the highest retrieval accuracy, the pipeline was evaluated on a ground
 * **User Interface:** Streamlit
 * **Package Management:** `uv`
 
+<img width="959" height="452" alt="image" src="https://github.com/user-attachments/assets/ee82328e-4b3d-4956-922f-501bf354975c" />
 
