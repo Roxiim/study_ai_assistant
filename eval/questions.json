@@ -13,5 +13,90 @@
     "question": "What is the purpose of the viewport transformation?",
     "expected_source": "Lab9_EN.pdf",
     "expected_page": 2
+  },
+  {
+    "question": "What does the camera transformation depend on?",
+    "expected_source": "Lab9_EN.pdf",
+    "expected_page": 1
+  },
+  {
+    "question": "Which are the 2 types of the projection transformation?",
+    "expected_source": "Lab9_EN.pdf",
+    "expected_page": 4
+  },
+  {
+    "question": "What sequence of transformations do we use in order to map 3D coordinates to 2D coordinate?",
+    "expected_source": "Lab9_EN.pdf",
+    "expected_page": 1
+  },
+  {
+    "question": "What is the Translation matrix in viewport transformation?",
+    "expected_source": "Lab9_EN.pdf",
+    "expected_page": 2
+  },
+  {
+    "question": "What is the scale matrix in viewport transformation?",
+    "expected_source": "Lab9_EN.pdf",
+    "expected_page": 2
+  },
+  {
+    "question": "What is the reflection matrix in viewport transformation?",
+    "expected_source": "Lab9_EN.pdf",
+    "expected_page": 2
+  },
+  {
+    "question": "How do you compute the viewport transformation matrix?",
+    "expected_source": "Lab9_EN.pdf",
+    "expected_page": 2
+  },
+  {
+    "question": "Which are the parameters used to specify the camera in world coordinates?",
+    "expected_source": "Lab9_EN.pdf",
+    "expected_page": 3
+  },
+  {
+    "question": "What are the characteristics of perspective projection",
+    "expected_source": "Lab9_EN.pdf",
+    "expected_page": 4
+  },
+  {
+    "question": "What are the characteristics of parallel projection?",
+    "expected_source": "Lab9_EN.pdf",
+    "expected_page": 4
+  },
+  {
+    "question": "What is perspective divide?",
+    "expected_source": "Lab9_EN.pdf",
+    "expected_page": 5
+  },
+  {
+    "question": "What is the condition that needs to be fulfilled in order for a point p to lie in front of a plane?",
+    "expected_source": "Lab9_EN.pdf",
+    "expected_page": 6
+  },
+  {
+    "question": "What is the condition that needs to be fulfilled in order for a point p to lie on a plane?",
+    "expected_source": "Lab9_EN.pdf",
+    "expected_page": 6
+  },
+  {
+    "question": "What is the condition that needs to be fulfilled in order for a point p to lie on the back of a plane?",
+    "expected_source": "Lab9_EN.pdf",
+    "expected_page": 6
+  },
+  {
+    "question": "What topics does the laboratory present?",
+    "expected_source": "Lab9_EN.pdf",
+    "expected_page": 1
+  },
+  {
+    "question": "What is equal with the ratio between width and height in the context of projection transformation?",
+    "expected_source": "Lab9_EN.pdf",
+    "expected_page": 4
+  },
+  {
+    "question": "Pseudocode for displaying the normal vector?",
+    "expected_source": "Lab9_EN.pdf",
+    "expected_page": 5
   }
 ]

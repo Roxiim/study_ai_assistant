@@ -2,7 +2,7 @@ import json
 import os
 from src.ingest import chunk_pdf
 from src.embed import get_collection, add_chunks
-from src.answer import answer
+from src.retrieve import retrieve
 
 def evaluate_chunk_size(chunk_size: int, overlap: int) -> float:
     """
@@ -45,7 +45,7 @@ def evaluate_chunk_size(chunk_size: int, overlap: int) -> float:
         expected_source = q["expected_source"]
         expected_page = q["expected_page"]
 
-        _, retrieved_passages = answer(collection, query, k=4)
+        retrieved_passages = retrieve(collection, query, k=4)
 
         match_found = any(
             res["source"] == expected_source and res["page"] == expected_page
@@ -54,9 +54,9 @@ def evaluate_chunk_size(chunk_size: int, overlap: int) -> float:
                 
         if match_found:
             hits += 1
-            print(f"✅ HIT: '{query}'")
+            print(f"HIT: '{query}'")
         else:
-            print(f"❌ MISS: '{query}' (Expected: {expected_source} Page: {expected_page})")
+            print(f"MISS: '{query}' (Expected: {expected_source} Page: {expected_page})")
             
     hit_rate = (hits / total) * 100 if total > 0 else 0
     print(f"\nResult for chunk size {chunk_size}: {hit_rate:.2f}% Hit Rate ({hits}/{total} matches)")
