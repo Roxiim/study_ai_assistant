@@ -63,15 +63,12 @@ Copy the contents of .env.example into .env and replace the placeholder with you
 
 Fragment de cod
 GEMINI_API_KEY=your_actual_api_key_here
-(Note: The .env file is git-ignored to keep your API key secure).
 
 💻 Usage
-Start the Application
-To run the interactive web interface, ensure your virtual environment is active and run:
+Start the Application and run:
 
 Bash
 streamlit run app.py
-Your default web browser will automatically open the application at http://localhost:8501.
 
 Run the Evaluation Pipeline
 Test the retrieval accuracy (Top-4 Hit Rate) and compare different chunk sizes:
