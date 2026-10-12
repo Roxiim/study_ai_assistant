@@ -43,9 +43,9 @@ cd rag-study-assistant
 Using uv (Recommended):
 Bash
 uv venv
-# Windows:
+Windows:
 .\.venv\Scripts\activate
-# macOS/Linux:
+macOS/Linux:
 source .venv/bin/activate
 (If you use standard Python: python -m venv venv and .\venv\Scripts\activate)
 
