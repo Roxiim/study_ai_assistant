@@ -31,24 +31,9 @@ To ensure the highest retrieval accuracy, the pipeline was evaluated on a ground
 * **User Interface:** Streamlit
 * **Package Management:** `uv`
 
-## 📂 Project Structure
-
-```text
-study_assistant/
-├── app.py                  # Main Streamlit web application
-├── requirements.txt        # Python dependencies
-├── .env.example            # Environment variables template
-├── .gitignore              # Git ignore file
-├── src/                    # Core logic modules
-│   ├── ingest.py           # PDF extraction and smart chunking
-│   ├── embed.py            # Vector embeddings and ChromaDB management
-│   ├── retrieve.py         # Top-k semantic search
-│   └── answer.py           # Prompt building and Gemini API integration
-└── eval/                   # Evaluation pipeline
-    ├── run_eval.py         # Automated testing for Top-4 Hit Rate
-    └── questions.json      # Ground-truth dataset for evaluation
 
 ##🚀 Installation & Setup
+
 1. Clone the repository
 Bash
 git clone [https://github.com/your-username/rag-study-assistant.git](https://github.com/your-username/rag-study-assistant.git)
@@ -93,3 +78,4 @@ Test the retrieval accuracy (Top-4 Hit Rate) and compare different chunk sizes:
 
 Bash
 python -m eval.run_eval
+
